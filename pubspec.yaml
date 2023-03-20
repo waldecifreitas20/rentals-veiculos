@@ -78,14 +78,14 @@ flutter:
   fonts:
     - family: Body Font
       fonts:
-        - asset: Raleway-VariableFont_wght
+        - asset: assets/fonts/Raleway-VariableFont_wght.ttf
 
     - family: Title Font
       fonts:
-        - asset: fonts/DancingScript-Medium.ttf
-        - asset: fonts/DancingScript-Regular.ttf
-        - asset: fonts/DancingScript-SemiBold.ttf
-        - asset: fonts/DancingScript-Bold.ttf
+        - asset: assets/fonts/DancingScript-Medium.ttf
+        - asset: assets/fonts/DancingScript-Regular.ttf
+        - asset: assets/fonts/DancingScript-SemiBold.ttf
+        - asset: assets/fonts/DancingScript-Bold.ttf
           weight: 700
   #
   # For details regarding fonts from package dependencies,

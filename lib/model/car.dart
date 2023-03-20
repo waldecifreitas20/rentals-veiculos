@@ -10,6 +10,19 @@ class Fuel {
   static const ALCOHOL = 'Álcool';
   static const DIESEL = 'Diesel';
   static const FLEX = 'Flex';
+  static const ELETRIC = 'Elétrico';
+  static const HIBRID = 'Híbrido';
+}
+
+class CarType {
+  static const SUV = 'SUV';
+  static const Hatch = 'Hatch';
+  static const Sedan = 'Sedan';
+  static const Crossover = 'Crossover';
+  static const Minivan = 'Minivan';
+  static const Pickup = 'Picape';
+  static const Coupe = 'Coupe';
+  static const Luxe = 'Luxo';
 }
 
 class Car {
@@ -23,6 +36,7 @@ class Car {
   final String transmissionType;
   final String imagePath;
   final double dayPrice;
+  final String type;
 
   const Car({
     required this.name,
@@ -35,5 +49,6 @@ class Car {
     required this.transmissionType,
     required this.dayPrice,
     required this.imagePath,
+    required this.type,
   });
 }

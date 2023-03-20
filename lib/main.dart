@@ -25,6 +25,10 @@ class RentalVeiculosApp extends StatelessWidget {
             fontFamily: 'Title Font',
             fontSize: 25,
           ),
+          bodyMedium: theme.textTheme.bodyMedium?.copyWith(
+            fontFamily: 'Body Font',
+          ),
+          
         ),
         appBarTheme: theme.appBarTheme.copyWith(
           elevation: 0,

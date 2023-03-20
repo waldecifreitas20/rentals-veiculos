@@ -1,6 +1,6 @@
 # rentalsveiculos
 
-PT: Uma aplicação flutter que simula um app de aluguel de veículos.<\br>
+PT: Uma aplicação flutter que simula um app de aluguel de veículos.<br>
 EN: An flutter application that simulates an app for renting cars
 
 ## Getting Started

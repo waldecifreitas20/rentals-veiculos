@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:rentalsveiculos/global/routes.dart';
-import 'package:rentalsveiculos/screens/home_page.dart';
+import 'package:rentalsveiculos/screens/home/home_page.dart';
 
 void main(List<String> args) {
   runApp(const RentalVeiculosApp());
@@ -13,12 +13,13 @@ class RentalVeiculosApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = ThemeData.light();
-
+    const dark = Color.fromRGBO(46, 56, 64, 1);
+    const normal = Color.fromRGBO(78, 110, 129, 1);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: theme.copyWith(
         colorScheme: theme.colorScheme.copyWith(
-          primary: const Color.fromRGBO(78, 110, 129, 1),
+          primary: normal,
         ),
         textTheme: theme.textTheme.copyWith(
           titleLarge: theme.textTheme.titleLarge?.copyWith(
@@ -27,8 +28,9 @@ class RentalVeiculosApp extends StatelessWidget {
           ),
           bodyMedium: theme.textTheme.bodyMedium?.copyWith(
             fontFamily: 'Body Font',
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
           ),
-          
         ),
         appBarTheme: theme.appBarTheme.copyWith(
           elevation: 0,

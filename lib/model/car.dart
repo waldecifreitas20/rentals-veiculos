@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:rentalsveiculos/model/branch.dart';
 
 class Transmission {
@@ -51,4 +53,27 @@ class Car {
     required this.imagePath,
     required this.type,
   });
+
+  String get fullName => '$manufacturer $name $year';
+
+  List<Widget> generateStars() {
+    List<Widget> stars = [];
+
+    for (var i = 0; i < 5; i++) {
+      if (i < rate) {
+        stars.add(const Icon(
+          Icons.star,
+          color: Colors.amber,
+          size: 18,
+        ));
+      } else {
+        stars.add(const Icon(
+          Icons.star_border_outlined,
+          color: Colors.amber,
+          size: 18,
+        ));
+      }
+    }
+    return stars;
+  }
 }
